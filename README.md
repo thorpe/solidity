@@ -1,2 +1,2 @@
 # solidity
-solidity
+solidity 강좌

@@ -1,16 +1,12 @@
-pragma solidity ^0.4.4;
+pragma solidity ^0.4.0;
+
 
 contract HelloWorld {
-  string public greeting;
-  function HelloWorld(string _greeting) {
-    greeting = _greeting;
-  }
+    constructor() public {
+    }
 
-  function setGreeting(string _greeting) {
-    greeting = _greeting;
-  }
-
-  function say() constant returns (string) {
-    return greeting;
-  }
+    function hello() public pure returns (string) {
+        string memory myVariable = "abcd";
+        return myVariable;
+    }
 }

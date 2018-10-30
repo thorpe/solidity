@@ -1,0 +1,55 @@
+### 프로젝트 생성
+```bash
+mkdir /home/truffle
+cd /home/truffle
+truffle init
+```
+ ```bash
+tree
+```
+ ```
+├── contracts
+│   └── Migrations.sol
+├── migrations
+│   └── 1_initial_migration.js
+├── test
+├── truffle-config.js
+└── truffle.js
+```
+* 각 파일의 환경설정에 대해 설명.
+ truffle.js 
+```bash
+module.exports = {
+  networks: {
+    development: {
+      host: "localhost",
+      port: 8545,
+      network_id: "*" // Match any network id
+    }
+  }
+}
+```
+ ### 테스트 환경실행
+```bash
+ganache-cli
+```
+ ### 컴파일
+```bash
+truffle compile
+```
+ ### 배포
+```bash
+truffle migration
+```
+ ### 테스트
+```bash
+truffle test
+```
+ ### 기본구조 설명
+```bash
+1. 폴더 구두로 설명.
+2. HelloWorld.sol 생개발
+3. 컴파일및 배포
+4. 테스트
+5. 배포
+```
